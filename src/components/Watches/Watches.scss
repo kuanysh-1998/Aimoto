@@ -1,0 +1,127 @@
+.check {
+  &__content {
+    padding: 3rem 0 3rem 0;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.01);
+    border-radius: 8px;
+  }
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5rem;
+    margin-bottom: 2.3rem;
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    & a:hover {
+      color: #1890ff;
+    }
+  }
+  &__right input {
+    height: 2rem;
+    padding: 1rem;
+    width: 13rem;
+    outline: none;
+    border-radius: 0.5rem;
+  }
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.7rem;
+    margin-bottom: 1rem;
+  }
+  &__undefined {
+    text-align: center;
+    color: #fff;
+    margin: 2rem 0;
+  }
+  &__top h2 {
+    font-style: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #fff;
+  }
+  &__top a {
+    font-style: normal;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: right;
+    color: #fff;
+    display: flex;
+    align-items: center;
+  }
+  &__card {
+    background: var(--color-bg-variant);
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    &:hover {
+      border-color: var(--color-primary-variant);
+      background: transparent;
+    }
+    &-img {
+      border-radius: 1.5rem;
+      overflow: hidden;
+    }
+    &-btns {
+      display: flex;
+      column-gap: 1rem;
+    }
+    & h3 {
+      font-style: normal;
+      font-size: 16px;
+      line-height: 19px;
+      color: #fff;
+      margin-bottom: 0.25rem;
+      margin-top: 1rem;
+    }
+    & p {
+      font-style: normal;
+      font-size: 12px;
+      line-height: 20px;
+      color: #fff;
+      margin-bottom: 0.75rem;
+    }
+    & button {
+      background: #1890ff;
+      border-radius: 4px;
+      font-style: normal;
+      font-size: 10px;
+      line-height: 20px;
+      color: #ffffff;
+      padding: 0.1rem 1rem;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .check {
+    &__top {
+      flex-direction: column;
+      & h2 {
+        margin-bottom: 1rem;
+      }
+    }
+    &__row {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .check__top {
+    flex-direction: column;
+    & h2 {
+      margin-bottom: 1rem;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .check {
+    &__row {
+      grid-template-columns: 1fr;
+    }
+  }
+}

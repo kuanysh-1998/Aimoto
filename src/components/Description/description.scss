@@ -1,0 +1,64 @@
+.description {
+  &__container {
+    padding: 8rem 0 3rem 0;
+  }
+  &__title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+    row-gap: 1rem;
+    & h2 {
+      color: #fff;
+      font-size: 2rem;
+    }
+    & h5 {
+      font-size: 1.5rem;
+    }
+    & a {
+      background:  #1f1f38;;
+    }
+  }
+  &__model {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.7rem;
+    margin-bottom: 1rem;
+  }
+  &__main {
+    & h3 {
+      color: #d36666;
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+    & li {
+      color: #e2e1ff;
+      font-size: 0.7;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+    .description{
+        &__model{
+            grid-template-columns: 1fr 1fr;
+            gap: 0.5rem;
+        }
+        &__title {
+          & a {
+            margin: 0 auto;
+          }
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    .description{
+        &__model{
+            grid-template-columns: 1fr;
+            text-align: center;
+            gap: 0.7rem;
+        }
+    }
+}

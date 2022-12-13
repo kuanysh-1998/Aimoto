@@ -1,0 +1,60 @@
+.about {
+  padding: 10rem 0;
+  background: #fafafa;
+}
+
+.about img {
+  width: 4rem;
+}
+
+.about span {
+  font-weight: bold;
+  color: black;
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.about__experience {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1.3rem;
+  padding-bottom: 2rem;
+}
+
+.about__experience-left {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.about__experience-right {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+}
+
+.about__details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.about__details p {
+  font-size: 1.7rem;
+  line-height: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.009em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+@media screen and (max-width: 1024px) {
+  .about__experience {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+}
