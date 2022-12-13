@@ -12,6 +12,8 @@ import Faq from "./components/Faq/Faq";
 import Aksessuary from "./components/Aksessuary/Aksessuary";
 import Aboutremeshok from "./components/Aboutremeshok/Aboutremeshok";
 import InfoWatch from "./components/InfoWatch/InfoWatch";
+import AdminPanel from "./components/AdminPanel/AdminPanel";
+import PostListProshivka from "./components/AdminPanel/Proshivka/PostListProshivka";
 
 
 function App() {
@@ -27,6 +29,8 @@ function App() {
         <Route path="/aksessuary" element={<Aksessuary />} />
         <Route path="/aboutremeshok:id" element={<Aboutremeshok />} />
         <Route path="/infowatch" element={<InfoWatch />}/>
+        <Route path="/adminpanel" element={<AdminPanel />} />
+        <Route path="/proshivka" element={<AdminPanel />} />
       </Routes>
       <ToastContainer
         position="top-right"

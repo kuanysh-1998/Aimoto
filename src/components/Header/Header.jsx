@@ -7,9 +7,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
-  const supportButton = useRef();
   const btnToWatches = useRef();
-  const partners = useRef();
 
   return (
     <header id="#" className="header">
@@ -35,59 +33,40 @@ const Header = () => {
             <Link
               className="header__item"
               onClick={() => setClick(!click)}
-              to='/aksessuary'
+              to="/aksessuary"
             >
               Аксессуары
             </Link>
             <Link
               className="header__item"
               onClick={() => setClick(!click)}
-              to='/infowatch'
+              to="/infowatch"
             >
               More info
             </Link>
-            <Link
-              ref={partners}
-              onClick={() => setClick(!click)}
-              className="header__item"
-              to={{
-                pathname: "/",
-                hash: "#partners",
-              }}
-            >
-              Партнеры
-            </Link>
+
             <Link
               onClick={() => setClick(!click)}
               className="header__item"
-              to='/about'
+              to="/about"
             >
               О компании
             </Link>
-            <Link
-              ref={supportButton}
-              onClick={() => setClick(!click)}
-              className="header__item"
-              to={{
-                pathname: "/",
-                hash: "#support",
-              }}
-            >
-              Поддержка
-            </Link>
+
             <Link
               onClick={() => setClick(!click)}
               className="header__item"
-              to='/services'
+              to="/services"
             >
               Сервисные центры
             </Link>
+
             <Link
               onClick={() => setClick(!click)}
               className="header__item"
-              to='/faq'
+              to="/adminpanel"
             >
-              FAQ
+              Админ панель
             </Link>
           </ul>
           <div className="header__hamburgermenu" onClick={() => handleClick()}>
