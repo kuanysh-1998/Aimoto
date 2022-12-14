@@ -40,14 +40,14 @@ const InfoWatch = () => {
               .filter((imei) =>
                 imei.imei.toUpperCase().includes(searchImei.toUpperCase())
               )
-              .map((value, key) => {
+              .map(({id, model, file, program, Comment, imei}) => {
                 return (
-                  <tr key={key}>
-                    <td>{value.model}</td>
-                    <td>{value.imei}</td>
-                    <td> <a href={value.file} download target="_blank" rel="noreferrer">Файл для прошивки</a></td>
-                    <td> <a href={value.program} download target="_blank" rel="noreferrer">Программа для прошивки</a></td>
-                    <td>{value.comment}</td>
+                  <tr key={id}>
+                    <td>{model}</td>
+                    <td>{imei}</td>
+                    <td> <a href={file} download target="_blank" rel="noreferrer">Файл для прошивки</a></td>
+                    <td> <a href={program} download target="_blank" rel="noreferrer">Программа для прошивки</a></td>
+                    <td>{Comment}</td>
                   </tr>
                 );
               })}
