@@ -32,6 +32,7 @@ const InfoWatch = () => {
               <th>IMEI</th>
               <th>Файл для прошивки</th>
               <th>Программа для прошивки</th>
+              <th>Комментарий Инженера</th>
             </tr>
           </thead>
           <tbody>
@@ -46,6 +47,7 @@ const InfoWatch = () => {
                     <td>{value.imei}</td>
                     <td> <a href={value.file} download target="_blank" rel="noreferrer">Файл для прошивки</a></td>
                     <td> <a href={value.program} download target="_blank" rel="noreferrer">Программа для прошивки</a></td>
+                    <td>{value.comment}</td>
                   </tr>
                 );
               })}

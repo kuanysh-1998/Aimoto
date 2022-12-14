@@ -49,9 +49,9 @@
 
 .footer__links {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
-  gap: 2rem;
+  column-gap: 2rem;
   margin: 0 auto 2rem;
 }
 
@@ -106,5 +106,12 @@
   .footer__left p {
     font-size: 0.8rem;
     line-height: 1.5rem;
+  }
+  .footer__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1rem;
+    margin: 0 auto 2rem;
   }
 }

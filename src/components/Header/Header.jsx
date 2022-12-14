@@ -61,13 +61,6 @@ const Header = () => {
               Сервисные центры
             </Link>
 
-            <Link
-              onClick={() => setClick(!click)}
-              className="header__item"
-              to="/adminpanel"
-            >
-              Админ панель
-            </Link>
           </ul>
           <div className="header__hamburgermenu" onClick={() => handleClick()}>
             {!click ? (
