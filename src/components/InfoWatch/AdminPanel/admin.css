@@ -1,0 +1,42 @@
+.admin {
+  padding: 9rem 6rem;
+  height: 100%;
+  width: 100%;
+}
+
+.MuiTypography-root {
+  color: black;
+}
+
+.MuiTableCell-root {
+  background: #fff;
+}
+
+.MuiTableCell-root:hover {
+  background: #fff;
+}
+
+.MuiFormLabel-root {
+  color: black;
+}
+
+.MuiFormLabel-root span {
+  color: black;
+}
+
+.MuiTableSortLabel-root span {
+  color: black;
+}
+
+.MuiPaper-root {
+  margin-top: 5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .Ralist-main {
+    width: 100% !important;
+  }
+  .admin {
+    width: 75%;
+  }
+}
