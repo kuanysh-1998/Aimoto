@@ -12,7 +12,7 @@ import Faq from "./components/Faq/Faq";
 import Aksessuary from "./components/Aksessuary/Aksessuary";
 import Aboutremeshok from "./components/Aboutremeshok/Aboutremeshok";
 import InfoWatch from "./components/InfoWatch/InfoWatch";
-import AdminPanel from "./components/InfoWatch/AdminPanel/AdminPanel";
+import AdminPanel from "./components/AdminPanel/AdminPanel";
 
 
 function App() {
