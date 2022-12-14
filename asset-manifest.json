@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/aimotowatch/static/css/main.e548a131.css",
-    "main.js": "/aimotowatch/static/js/main.cfd1b5e2.js",
+    "main.js": "/aimotowatch/static/js/main.270da168.js",
     "static/media/disney.png": "/aimotowatch/static/media/disney.f5169298949b13d21d9a.png",
     "static/media/reg1.jpg": "/aimotowatch/static/media/reg1.b927fa32d4f9aab09b8d.jpg",
     "static/media/beeline.png": "/aimotowatch/static/media/beeline.9a5c07df76acf2afece3.png",
@@ -25,10 +25,10 @@
     "static/media/gps.png": "/aimotowatch/static/media/gps.371d298a0f5556a4378a.png",
     "index.html": "/aimotowatch/index.html",
     "main.e548a131.css.map": "/aimotowatch/static/css/main.e548a131.css.map",
-    "main.cfd1b5e2.js.map": "/aimotowatch/static/js/main.cfd1b5e2.js.map"
+    "main.270da168.js.map": "/aimotowatch/static/js/main.270da168.js.map"
   },
   "entrypoints": [
     "static/css/main.e548a131.css",
-    "static/js/main.cfd1b5e2.js"
+    "static/js/main.270da168.js"
   ]
 }
