@@ -1,5 +1,8 @@
 .admin {
   padding: 9rem 6rem;
+  & .css-c1bgk0-RaLogin-root {
+    background: #fff;
+  }
 }
 .MuiTypography-root {
   color: black;
@@ -25,6 +28,10 @@
   }
 }
 
-.RaAppBar-toolbar{
+.RaAppBar-toolbar {
   margin-top: 5rem;
+}
+
+.admin {
+  background: #fff;
 }

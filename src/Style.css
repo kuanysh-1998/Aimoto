@@ -99,6 +99,7 @@ h4, h5, span {
 .header {
   background: #1d1d1f;
   position: fixed;
+  z-index: 10;
   width: 100%;
 }
 
@@ -213,8 +214,10 @@ h4, h5, span {
 
 .check__right input {
   height: 2rem;
-  padding: 0.9rem;
+  padding: 1rem;
   width: 13rem;
+  outline: none;
+  border-radius: 0.5rem;
 }
 
 .check__row {
@@ -374,9 +377,9 @@ h4, h5, span {
 
 .footer__links {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
-  gap: 2rem;
+  column-gap: 2rem;
   margin: 0 auto 2rem;
 }
 
@@ -432,6 +435,13 @@ h4, h5, span {
     font-size: 0.8rem;
     line-height: 1.5rem;
   }
+  .footer__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1rem;
+    margin: 0 auto 2rem;
+  }
 }
 
 .container.contact__container {
@@ -439,6 +449,7 @@ h4, h5, span {
   display: grid;
   grid-template-columns: 30% 58%;
   gap: 12%;
+  padding-bottom: 5rem;
 }
 
 .contact__title {
@@ -581,5 +592,137 @@ h4, h5, span {
     grid-template-columns: 1fr;
     text-align: center;
     gap: 0.7rem;
+  }
+}
+
+.services {
+  padding: 8rem 0;
+  background: #fafafa;
+  width: 100%;
+  height: 100%;
+}
+
+.services h2 {
+  color: black;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.services__search {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.services input {
+  border-color: black;
+  height: 2rem;
+  padding: 1.2rem;
+  width: 13rem;
+  outline: none;
+  border-radius: 1rem;
+  position: absolute;
+  top: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.services__notfound {
+  text-align: center;
+  color: black;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 25rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.services__notfound a {
+  color: darkblue;
+  transition: var(--transition);
+}
+
+.services__notfound a:hover {
+  color: #a6ff00;
+  font-size: 2rem;
+  transition: var(--transition);
+}
+
+table {
+  width: 100%;
+  height: 30rem;
+  border-collapse: collapse;
+  border-color: black;
+  margin: 3rem auto;
+}
+
+th {
+  border-bottom: 1px solid black;
+  color: black;
+  padding: 0.5rem;
+  border: 2px solid black;
+}
+
+td {
+  text-align: center;
+  border: 2px solid black;
+  color: black;
+  padding: 0.5rem;
+}
+
+td:hover {
+  color: #a6ff00;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+td a {
+  color: black;
+}
+
+td a:hover {
+  color: #a6ff00;
+}
+
+@media screen and (max-width: 1024px) {
+  .services__notfound {
+    font-size: 0.7rem;
+    top: 24rem;
+  }
+  .services h2 {
+    font-size: 1.5rem;
+  }
+  th {
+    padding: 0.2rem;
+  }
+  td {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+  }
+  table {
+    width: 75%;
+    height: 10rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .services input {
+    top: 4rem;
+  }
+  .services__notfound {
+    font-size: 0.5rem;
+    margin-bottom: 4rem;
+    top: 20rem;
+  }
+  table {
+    width: 50%;
+  }
+  th {
+    padding: 0.3rem;
+    font-size: 0.8rem;
+  }
+  td {
+    padding: 0.3rem;
+    font-size: 0.6rem;
   }
 }
