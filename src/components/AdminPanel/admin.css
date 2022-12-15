@@ -47,6 +47,10 @@
   width: 50rem;
 }
 
+.admin .MuiButtonBase-root span {
+  font-weight: bold;
+}
+
 @media screen and (max-width: 1024px) {
   .admin input {
     width: 35rem;

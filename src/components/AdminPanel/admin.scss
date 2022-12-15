@@ -41,6 +41,11 @@
   & input{
     width: 50rem;
   }
+  & .MuiButtonBase-root{
+    & span{
+      font-weight: bold;
+    }
+  }
 }
 
 
