@@ -2,11 +2,6 @@
   padding: 9rem 6rem;
 }
 
-.admin .css-c1bgk0-RaLogin-root {
-  background: #fff;
-  background-image: none;
-}
-
 .MuiTypography-root {
   color: black;
 }
@@ -37,4 +32,14 @@
 
 .admin {
   background: #fff;
+}
+
+.admin .css-c1bgk0-RaLogin-root {
+  background: #fff;
+  background-image: none;
+}
+
+Admin .css-c1bgk0-RaLogin-root {
+  background: #fff;
+  background-image: none;
 }
