@@ -10,7 +10,7 @@ const dataProvider = jsonServerProvider(
 function AdminPanel() {
   return (
     <div className="admin">
-      
+
         <Admin dataProvider={dataProvider} authProvider={authProvider}>
           <Resource
             name="proshivka"
@@ -19,6 +19,7 @@ function AdminPanel() {
             create={PostCreate}
           />
         </Admin>
+
     </div>
   );
 }
