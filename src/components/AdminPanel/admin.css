@@ -1,6 +1,5 @@
 .admin {
   padding: 9rem 6rem;
-  height: 100%;
 }
 
 .MuiTypography-root {
@@ -27,25 +26,6 @@
   color: black;
 }
 
-.MuiPaper-root {
+.RaAppBar-toolbar {
   margin-top: 5rem;
-  width: 100%;
-}
-
-@media screen and (max-width: 1024px) {
-  .Ralist-main {
-    width: 100% !important;
-  }
-  .admin {
-    width: 75%;
-  }
-  .RaList-main {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .RaList-main {
-    width: 75%;
-  }
 }
