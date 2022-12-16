@@ -1,5 +1,14 @@
 .admin {
   padding: 9rem 0.3rem;
+  &__btn{
+    position: absolute;
+    top: 9rem;
+    left: 50%;
+    transform: translateX(-50%);
+    &:hover{
+      border-color: var(--color-primary-variant);
+    }
+  }
 }
 .MuiTypography-root {
   color: black;
@@ -30,7 +39,6 @@
 }
 
 .admin {
-  background: #fff;
   & .css-c1bgk0-RaLogin-root {
     background: #fff;
   }
@@ -48,7 +56,14 @@
   }
 }
 
-
+.css-1vgntmk-RaLayout-root {
+  background-color: #fafafb;
+  width: 100%;
+  color: rgba(0, 0, 0, 0.87);
+  margin-top: 3rem;
+  padding-bottom: 0;
+  height: 100%;
+}
 
 
 @media screen and (max-width: 1024px) {

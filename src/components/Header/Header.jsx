@@ -37,13 +37,6 @@ const Header = () => {
             >
               Аксессуары
             </Link>
-            <Link
-              className="header__item"
-              onClick={() => setClick(!click)}
-              to="/infowatch"
-            >
-              More info
-            </Link>
 
             <Link
               onClick={() => setClick(!click)}
@@ -68,7 +61,6 @@ const Header = () => {
             >
               Админ панель
             </Link>
-
           </ul>
           <div className="header__hamburgermenu" onClick={() => handleClick()}>
             {!click ? (
