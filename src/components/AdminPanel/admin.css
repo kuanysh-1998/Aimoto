@@ -2,17 +2,6 @@
   padding: 9rem 0.3rem;
 }
 
-.admin__btn {
-  position: absolute;
-  top: 9rem;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.admin__btn:hover {
-  border-color: var(--color-primary-variant);
-}
-
 .MuiTypography-root {
   color: black;
 }
@@ -90,8 +79,5 @@
 @media screen and (max-width: 600px) {
   .admin input {
     width: 19rem;
-  }
-  .admin .css-1vgntmk-RaLayout-root {
-    margin-top: 5rem;
   }
 }

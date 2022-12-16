@@ -8,6 +8,7 @@ const Header = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
   const btnToWatches = useRef();
+  const [showInfo, setShowInfo] = useState(false);
 
   return (
     <header id="#" className="header">
@@ -55,11 +56,15 @@ const Header = () => {
             </Link>
 
             <Link
-              onClick={() => setClick(!click)}
+              onClick={() => {setClick(!click); setShowInfo(!showInfo)}}
               className="header__item"
               to="/proshivka"
             >
               Админ панель
+            </Link>
+
+            <Link className={ !showInfo ? 'header__showInfo' : 'header__item'} to="/infowatch">
+              More info
             </Link>
           </ul>
           <div className="header__hamburgermenu" onClick={() => handleClick()}>

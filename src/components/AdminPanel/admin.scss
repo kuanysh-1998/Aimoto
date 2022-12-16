@@ -1,14 +1,5 @@
 .admin {
   padding: 9rem 0.3rem;
-  &__btn{
-    position: absolute;
-    top: 9rem;
-    left: 50%;
-    transform: translateX(-50%);
-    &:hover{
-      border-color: var(--color-primary-variant);
-    }
-  }
 }
 .MuiTypography-root {
   color: black;
@@ -90,9 +81,6 @@
   .admin{
     & input{
       width: 19rem;
-    }
-    & .css-1vgntmk-RaLayout-root {
-      margin-top: 5rem;
     }
   }
 }
