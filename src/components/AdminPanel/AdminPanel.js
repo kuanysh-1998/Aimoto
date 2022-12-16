@@ -12,11 +12,10 @@ const dataProvider = jsonServerProvider(
 function AdminPanel() {
   return (
     <div className="admin">
+      <Link className="btn-primary btn admin__btn" to="/infowatch">
+        More info
+      </Link>
       <div className="container">
-        <Link className="btn-primary btn admin__btn" to="/infowatch">
-          More info
-        </Link>
-
         <Admin dataProvider={dataProvider} authProvider={authProvider}>
           <Resource
             name="proshivka"

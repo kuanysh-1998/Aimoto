@@ -40,7 +40,9 @@
 
 .admin {
   & .css-c1bgk0-RaLogin-root {
-    background: #fff;
+    background: none;
+    margin-top: 3rem;
+    background-image: none;
   }
   & .css-1bz6oir {
     background-image: none;
@@ -54,10 +56,19 @@
       font-weight: bold;
     }
   }
+  & .css-ycxhju {
+    background-color: none;
+  }
+  & .css-1uodbwk-MuiScopedCssBaseline-root{
+    background-color: none;
+  }
+  & body {
+    background-color: none;
+  }
 }
 
 .css-1vgntmk-RaLayout-root {
-  background-color: #fafafb;
+  background-color: none;
   width: 100%;
   color: rgba(0, 0, 0, 0.87);
   margin-top: 3rem;
@@ -79,6 +90,9 @@
   .admin{
     & input{
       width: 19rem;
+    }
+    & .css-1vgntmk-RaLayout-root {
+      margin-top: 5rem;
     }
   }
 }

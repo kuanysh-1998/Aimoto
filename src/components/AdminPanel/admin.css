@@ -42,7 +42,9 @@
 }
 
 .admin .css-c1bgk0-RaLogin-root {
-  background: #fff;
+  background: none;
+  margin-top: 3rem;
+  background-image: none;
 }
 
 .admin .css-1bz6oir {
@@ -58,8 +60,20 @@
   font-weight: bold;
 }
 
+.admin .css-ycxhju {
+  background-color: none;
+}
+
+.admin .css-1uodbwk-MuiScopedCssBaseline-root {
+  background-color: none;
+}
+
+.admin body {
+  background-color: none;
+}
+
 .css-1vgntmk-RaLayout-root {
-  background-color: #fafafb;
+  background-color: none;
   width: 100%;
   color: rgba(0, 0, 0, 0.87);
   margin-top: 3rem;
@@ -76,5 +90,8 @@
 @media screen and (max-width: 600px) {
   .admin input {
     width: 19rem;
+  }
+  .admin .css-1vgntmk-RaLayout-root {
+    margin-top: 5rem;
   }
 }
