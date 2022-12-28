@@ -16,7 +16,7 @@ const Watches = () => {
   ).length;
 
   useEffect(() => {
-    fetch('https://aimoto-server-production.up.railway.app/watches').then((res) => res.json())
+    fetch('https://aimoto-api.onrender.com/watches').then((res) => res.json())
     .then((data) => setProducts(data));
   }, []);
 

@@ -15,7 +15,7 @@ const Aboutremeshok = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    fetch("https://aimoto-server-production.up.railway.app/remeshki/" + id )
+    fetch("https://aimoto-api.onrender.com/remeshki/" + id )
       .then((res) => res.json())
       .then((data) => setRemeshok(data));
   }, []);

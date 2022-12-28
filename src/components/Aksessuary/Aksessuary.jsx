@@ -6,7 +6,7 @@ const Aksessuary = () => {
   const [remeshok, setRemeshok] = useState([]);
 
   useEffect(() => {
-    fetch("https://aimoto-server-production.up.railway.app/remeshki")
+    fetch("https://aimoto-api.onrender.com/remeshki")
       .then((res) => res.json())
       .then((data) => setRemeshok(data));
   }, []);

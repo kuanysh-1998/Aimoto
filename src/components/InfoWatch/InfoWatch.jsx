@@ -6,7 +6,7 @@ const InfoWatch = () => {
     const [imei, setImei] = useState([]);
     
     useEffect(() => {
-      fetch("https://aimoto-server-production.up.railway.app/proshivka")
+      fetch("https://aimoto-api.onrender.com/proshivka")
         .then((res) => res.json())
         .then((data) => setImei(data));
     }, []);

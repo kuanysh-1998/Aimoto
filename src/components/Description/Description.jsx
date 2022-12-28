@@ -7,7 +7,7 @@ const Description = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    fetch("https://aimoto-server-production.up.railway.app/watches/" + id)
+    fetch("https://aimoto-api.onrender.com/watches/" + id)
       .then((res) => res.json())
       .then((data) => setWatches(data));
   }, []);

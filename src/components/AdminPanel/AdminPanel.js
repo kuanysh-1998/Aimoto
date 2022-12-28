@@ -5,7 +5,7 @@ import { PostList, PostEdit, PostCreate } from "./Proshivka";
 import { authProvider } from "./AuthProvider";
 
 const dataProvider = jsonServerProvider(
-  "https://aimoto-server-production.up.railway.app"
+  "https://aimoto-api.onrender.com"
 );
 
 function AdminPanel() {

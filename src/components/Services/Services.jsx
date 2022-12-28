@@ -6,7 +6,7 @@ const Services = () => {
   const [searchCity, setSearchCity] = useState("");
 
   useEffect(() => {
-    fetch("https://aimoto-server-production.up.railway.app/services")
+    fetch("https://aimoto-api.onrender.com/services")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);
