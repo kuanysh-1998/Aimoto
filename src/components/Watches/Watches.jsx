@@ -1,8 +1,9 @@
 import { MdKeyboardArrowRight } from "react-icons/md";
 import Product from "./Product";
 import React, { useState, useEffect, useRef } from "react";
-import {  toast } from 'react-toastify';
+import { toast } from "react-toastify";
 import { useLocation } from "react-router";
+import axios from "axios";
 
 const Watches = () => {
   const [count, setCount] = useState(1);
@@ -16,15 +17,15 @@ const Watches = () => {
   ).length;
 
   useEffect(() => {
-    fetch('https://aimoto-api.onrender.com/watches').then((res) => res.json())
-    .then((data) => setProducts(data));
+    axios
+      .get("https://6419bb3ef398d7d95d47e413.mockapi.io/aimoto")
+      .then(({ data }) => setProducts(data[0].watches));
   }, []);
 
-
   const handleScroll = () => {
-    scrollRef.current?.scrollIntoView({ behavior: "smooth"  });
+    scrollRef.current?.scrollIntoView({ behavior: "smooth" });
   };
-  
+
   useEffect(() => {
     if (location.hash === "#watch") {
       handleScroll();
@@ -47,23 +48,33 @@ const Watches = () => {
                 type="search"
                 placeholder="название часов..."
               />
-              <button className="btn"  onClick={() => {
-                setCount(count * products.length);
-                toast('Все продукты успешно отображены!');
-                }}>
+              <button
+                className="btn"
+                onClick={() => {
+                  setCount(count * products.length);
+                  toast("Все продукты успешно отображены!");
+                }}
+              >
                 Показать все <MdKeyboardArrowRight />
               </button>
             </div>
           </div>
 
           <div className="check__row">
-            {products.filter((product) =>
+            {products
+              .filter((product) =>
                 product.title.toUpperCase().includes(search.toUpperCase())
               )
               .filter((product, index) => index < 3 * count)
               .map(({ id, image, title, price, link }) => (
                 <React.Fragment key={id}>
-                  <Product id={id} image={image} title={title} price={price} link={link} />
+                  <Product
+                    id={id}
+                    image={image}
+                    title={title}
+                    price={price}
+                    link={link}
+                  />
                 </React.Fragment>
               ))}
           </div>
@@ -74,15 +85,16 @@ const Watches = () => {
           )}
 
           {count * 3 >= products.length ? (
-            <button className="btn" type="button"  onClick={() => setCount(1)}>
+            <button className="btn" type="button" onClick={() => setCount(1)}>
               Скрыть
             </button>
           ) : (
-            <button className="btn"
+            <button
+              className="btn"
               style={{
                 display:
                   count * 3 >= productFilterAfterSearch
-                     ? "none"
+                    ? "none"
                     : "inline-block",
               }}
               onClick={() => setCount(count + 1)}
@@ -92,9 +104,13 @@ const Watches = () => {
           )}
 
           {productFilterAfterSearch ? (
-            <span> Показано {count * 3 >= productFilterAfterSearch
+            <span>
+              {" "}
+              Показано{" "}
+              {count * 3 >= productFilterAfterSearch
                 ? productFilterAfterSearch
-                : count * 3} из {productFilterAfterSearch}
+                : count * 3}{" "}
+              из {productFilterAfterSearch}
             </span>
           ) : (
             ""

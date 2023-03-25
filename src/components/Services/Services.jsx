@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
-
+import axios from "axios";
 
 const Services = () => {
   const [services, setServices] = useState([]);
   const [searchCity, setSearchCity] = useState("");
 
   useEffect(() => {
-    fetch("https://aimoto-api.onrender.com/services")
-      .then((res) => res.json())
-      .then((data) => setServices(data));
+    axios
+      .get("https://6419bb3ef398d7d95d47e413.mockapi.io/aimoto")
+      .then(({ data }) => setServices(data[1].services));
   }, []);
 
   let filteredCitiesAfterSearch = services.filter((service) =>
